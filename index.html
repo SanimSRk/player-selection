@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bangladesh Premier League</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+  <header class=" bg-[#dddd] py-5">
+    <nav class="flex justify-between w-[85%] mx-auto ">
+      <h2 class="text-2xl font-bold">Badget:<span id="BadgetValue" class="text-white">2500</span>$</h2>
+      <h2 class="text-2xl font-bold">Cart:<span id="CountPlayer" class="text-white">0</span></h2>
+      <h2 class="text-2xl font-bold">Left:<span id="leftPlayer" class="text-white">6</span></h2>
+    </nav>
+  </header>
+  <main>
+    <section class="w-[85%] mx-auto mt-8 border-b-2 border-dotted pb-4">
+
+      <h2 class="text-3xl font-bold text-center uppercase underline mb-6">My Player</h2>
+      <div class="flex justify-between">
+        <h2 class="text-2xl font-bold">Name</h2>
+        <h2 class="text-2xl font-bold">Price</h2>
+        <h2 class="text-2xl font-bold">Categery</h2>
+      </div>
+      <div id="conteners" class="mt-2 border-y-2 border-dotted pb-5">
+
+
+      </div>
+      <div class="text-center py-4 border-b-2 border-dotted ">
+        <h2 class="text-2xl font-bold ">Total Cost : <span id="tottalCost">0</span>$</h2>
+      </div>
+      <div class="text-center my-6">
+        <h2 class="font-bold text-xl">Used this copun code : <span class="text-green-500 text-2xl">Love20</span></h2>
+      </div>
+      <div class="text-center flex items-center justify-between mt-5 ">
+        <h2 class="text-2xl font-bold">Descount Price: <span id="descountPrice">0</span>$</h2>
+        <span class=" bg-[#dddd] px-2 rounded-lg">
+          <input id="inputSection" class="text-xl py-4 bg-[#dddd] px-9 rounded-lg border-none outline-none" type="text"
+            placeholder="Enter your copune code ">
+          <button id="applyBtnCopun" class=" btn text-xl font-bold text-white bg-green-500">Apply</button> </span>
+        <h2 class="text-2xl font-bold">Greand Total: <span id="grindTotal">0</span>$</h2>
+      </div>
+
+    </section>
+    <section class=" w-[92%] mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-[100px]">
+        <div class="card w-full bg-base-100 pt-5 shadow-xl">
+          <figure> <img src="image/shakib-al-hasan.webp" alt="">
+          </figure>
+          <div class="card-body grid justify-center text-center">
+            <h2 class="card-title justify-center">Shakib Al Hasan</h2>
+            <p class="text-xl">Price: <span>400</span>$</p>
+            <h2 class="text-xl">Categery: <span>Allrounder</span></h2>
+            <div class="card-actions justify-center ">
+              <button class="addBtn btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="card w-full bg-base-100 pt-5  shadow-xl">
+          <figure> <img src="image/tamim-iqbal (1).webp" alt="">
+          </figure>
+          <div class="card-body grid justify-center text-center">
+            <h2 class="card-title justify-center">Tamim Iqbal</h2>
+            <p class="text-xl">Price: <span>300</span>$</p>
+            <h2 class="text-xl">Categery: <span>Batsman</span></h2>
+            <div class="card-actions justify-center ">
+              <button class="addBtn btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="card w-full bg-base-100 pt-5 shadow-xl">
+          <figure> <img src="image/mahmudullah.webp" alt="">
+          </figure>
+          <div class="card-body grid justify-center text-center">
+            <h2 class="card-title justify-center">Mahmudullah</h2>
+            <p class="text-xl">Price: <span>320</span>$</p>
+            <h2 class="text-xl">Categery: <span>Allrounder</span></h2>
+            <div class="card-actions justify-center ">
+              <button class="addBtn btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="card w-full bg-base-100 pt-5 shadow-xl">
+          <figure> <img src="image/mehidy-hasan-miraz.webp" alt="">
+          </figure>
+          <div class="card-body grid justify-center text-center">
+            <h2 class="card-title justify-center">Mehidy Hasan Miraz</h2>
+            <p class="text-xl">Price: <span>310</span>$</p>
+            <h2 class="text-xl">Categery: <span>Allrounder</span></h2>
+            <div class="card-actions justify-center ">
+              <button class="addBtn btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="card w-full bg-base-100 pt-5  shadow-xl">
+          <figure> <img src="image/mushfiqur-rahim.webp" alt="">
+          </figure>
+          <div class="card-body grid justify-center text-center">
+            <h2 class="card-title justify-center">Mushfiqur Rahim</h2>
+            <p class="text-xl">Price: <span>350</span>$</p>
+            <h2 class="text-xl">Categery: <span>Batsman</span></h2>
+            <div class="card-actions justify-center ">
+              <button class="addBtn btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="card w-full bg-base-100 pt-5 shadow-xl">
+          <figure> <img src="image/litton-das.webp" alt="">
+          </figure>
+          <div class="card-body grid justify-center text-center">
+            <h2 class="card-title justify-center">Litton Das</h2>
+            <p class="text-xl">Price: <span>360</span>$</p>
+            <h2 class="text-xl">Categery: <span>WK-Batsman</span></h2>
+            <div class="card-actions justify-center ">
+              <button class="addBtn btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="card w-full bg-base-100 pt-5 shadow-xl">
+          <figure> <img src="image/mustafizur-rahman.webp" alt="">
+          </figure>
+          <div class="card-body grid justify-center pt-5 text-center">
+            <h2 class="card-title justify-center">Mustafizur Rahman</h2>
+            <p class="text-xl">Price: <span>305</span>$</p>
+            <h2 class="text-xl">Categery: <span>Bowler</span></h2>
+            <div class="card-actions justify-center ">
+              <button class="addBtn btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="card w-full bg-base-100 pt-5  shadow-xl">
+          <figure> <img src="image/afif-hossain.webp" alt="">
+          </figure>
+          <div class="card-body grid justify-center text-center">
+            <h2 class="card-title justify-center">Afif Hossain</h2>
+            <p class="text-xl">Price: <span>360</span>$</p>
+            <h2 class="text-xl">Categery: <span>Allrounder</span></h2>
+            <div class="card-actions justify-center ">
+              <button class="addBtn btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="card w-full bg-base-100 pt-5  shadow-xl">
+          <figure> <img src="image/soumya-sarkar.webp" alt="">
+          </figure>
+          <div class="card-body grid justify-center text-center">
+            <h2 class="card-title justify-center">Soumya Sarkar</h2>
+            <p class="text-xl">Price: <span>250</span>$</p>
+            <h2 class="text-xl">Categery: <span>Batsman</span></h2>
+            <div class="card-actions justify-center ">
+              <button class="addBtn btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="card w-full bg-base-100 pt-5  shadow-xl">
+          <figure> <img src="image/taskin-ahmed.webp" alt="">
+          </figure>
+          <div class="card-body grid justify-center text-center">
+            <h2 class="card-title justify-center">Taskin Ahmed</h2>
+            <p class="text-xl">Price: <span>320</span>$</p>
+            <h2 class="text-xl">Categery: <span>Bowler</span></h2>
+            <div class="card-actions justify-center ">
+              <button class="addBtn btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="card w-full bg-base-100 pt-5 shadow-xl">
+          <figure> <img src="image/najmul-hossain-shanto.webp" alt="">
+          </figure>
+          <div class="card-body grid justify-center text-center">
+            <h2 class="card-title justify-center">Najmul Hossain Shanto</h2>
+            <p class="text-xl">Price: <span>380</span>$</p>
+            <h2 class="text-xl">Categery: <span>Batsman</span></h2>
+            <div class="card-actions justify-center ">
+              <button class="addBtn btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="card w-full bg-base-100 pt-5 shadow-xl">
+          <figure> <img src="image/shoriful-islam.webp" alt="">
+          </figure>
+          <div class="card-body grid justify-center text-center">
+            <h2 class="card-title justify-center">Shoriful Islam</h2>
+            <p class="text-xl">Price: <span>350</span>$</p>
+            <h2 class="text-xl">Categery: <span>Bowler</span></h2>
+            <div class="card-actions justify-center ">
+              <button class="addBtn btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
