@@ -3,6 +3,19 @@ let sum = 0;
 for (const num of addButton) {
   num.addEventListener('click', function () {
     //player name price catagoery section ---------
+
+    const BadgetValue = setInnerTextParsint('BadgetValue');
+    if (BadgetValue <= 0) {
+      alert('bahi tumr ar taka nai ');
+      return;
+    }
+    const cartValue = setInnerTextParsint('CountPlayer');
+    if (cartValue + 1 > 6) {
+      alert('your limet is over');
+      return;
+    }
+
+    num.setAttribute('disabled', false);
     const player = num.parentNode.parentNode.childNodes[1].innerText;
     const price =
       num.parentNode.parentNode.childNodes[3].childNodes[1].innerText;
@@ -48,12 +61,9 @@ for (const num of addButton) {
 
     const bugetValue = (document.getElementById('BadgetValue').innerText =
       buget - price);
-    if (bugetValue <= 0) {
-      alert('bahi tumar badget sesh');
-      return;
-    }
   });
 }
+
 //-----descount total price ----------
 
 const applyBtnCopun = document.getElementById('applyBtnCopun');
